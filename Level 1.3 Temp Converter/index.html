@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-bar">
+            <div class="status-item">
+                <span id="time">10:00</span>
+            </div>
+            <div class="status-item">
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-item">
+                <i class="fa-solid fa-battery-full"></i>
+                <span id="battery"> 100% </span>
+                
+            </div>
+        </div>
+        <div class="converter">
+            <h1>Temperature Converter</h1>
+            <input type="number" id="temperature-input" placeholder="Enter temperature">
+            <select id="unit-select">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button id="convert-button">Convert</button>
+            <div id="result" class="result">Result will be displayed here</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
