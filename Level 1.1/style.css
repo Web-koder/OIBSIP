@@ -1,0 +1,211 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Header */
+header {
+    background-color: #d40000; /* Deadpool's red color */
+    padding: 0.5rem 1rem; /* Adjust padding */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px; /* Adjust based on logo size */
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+    padding-top: 4px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 1rem; /* Adjust spacing */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 400px; /* Adjust the height of the hero section */
+    background: url('images/hero.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the section */
+    background-position: top center; /* Ensure the background image is aligned from the top */
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-size: 3rem;
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #d40000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #b30000;
+}
+
+/* Features Section */
+.features-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 1.5rem;
+    color: #d40000; /* Deadpool's red color */
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line */
+    gap: 1rem; /* Space between items */
+    justify-content: space-between; /* Space out items evenly */
+}
+
+/* Adjust feature boxes for the first and second rows */
+.feature-box {
+    background: #222; /* Dark background for contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px; /* Set a max width for each feature box */
+    text-align: center;
+    flex: 1 1 calc(33.333% - 2rem); /* Three boxes per row with gap adjustment */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.feature-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.feature-box h3 {
+    margin-top: 0.5rem;
+    color: #d40000; /* Deadpool's red color */
+}
+
+/* Specific styling for weapon-box if needed */
+.weapon-box {
+    margin-bottom: 1rem; /* Space below each weapon box */
+}
+
+
+
+/* Ideology Section */
+.ideology-section {
+    padding: 2rem;
+    text-align: center;
+    background: #333;
+}
+
+.ideology-section h2 {
+    margin-bottom: 1rem;
+    color: #d40000;
+}
+
+.ideology-section p {
+    margin-bottom: 1rem;
+}
+
+.ideology-section img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Weapons Section */
+.weapons-section {
+    padding: 2rem;
+    text-align: center;
+    background: #222;
+}
+
+.weapons-section h2 {
+    margin-bottom: 1.5rem;
+    color: #d40000;
+}
+
+.weapon-box {
+    background: #333;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.weapon-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.weapon-box h3 {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #d40000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
